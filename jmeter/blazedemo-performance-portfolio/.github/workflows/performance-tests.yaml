@@ -1,0 +1,41 @@
+name: Run BlazeDemo Performance Tests
+
+# When this automation runs:
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:   # lets you also click "Run" manually on GitHub
+
+jobs:
+  run-jmeter-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the project files
+        uses: actions/checkout@v4
+
+      - name: Install Java (needed to run JMeter)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Download and set up JMeter
+        run: |
+          wget https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+          tar -xzf apache-jmeter-5.6.3.tgz
+
+      - name: Run the test suite
+        run: |
+          apache-jmeter-5.6.3/bin/jmeter -n -f \
+            -t jmeter/blazedemo-performance-portfolio/test-plans/BlazeDemo_Suite.jmx \
+            -l jmeter/blazedemo-performance-portfolio/test-results/ci-results.jtl \
+            -e -o jmeter/blazedemo-performance-portfolio/test-reports/ci-report_output
+
+      - name: Save the results so they can be downloaded
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-test-results
+          path: |
+            jmeter/blazedemo-performance-portfolio/test-results/ci-results.jtl
+            jmeter/blazedemo-performance-portfolio/test-reports/ci-report_output
