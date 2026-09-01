@@ -1,0 +1,58 @@
+name: Postman API Test Automation
+
+# Trigger this workflow on pushes to main, on every pull request,
+# and allow it to be run manually from the Actions tab.
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'postman/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'postman/**'
+  workflow_dispatch:
+
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Pull the repository's code onto the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Install Node.js, required to run Newman (Newman is an npm package)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Install Newman and the HTML report generator globally on the runner
+      - name: Install Newman
+        run: npm install -g newman newman-reporter-htmlextra
+
+      # Create the reports directory so Newman has somewhere to write output
+      - name: Create reports directory
+        run: mkdir -p postman/reports
+
+      # Run the full Postman collection against the dev environment.
+      # continue-on-error lets the workflow proceed to the upload step
+      # even if assertions fail (TC06/TC07 are expected to fail by design).
+      - name: Run Postman collection with Newman
+        continue-on-error: true
+        run: |
+          newman run postman/collections/Restful_Booker.postman_collection.json \
+            -e postman/environments/Restful-Booker-Dev.postman_environment.json \
+            --reporters cli,htmlextra,json \
+            --reporter-htmlextra-export postman/reports/sprint-1-test-summary.html \
+            --reporter-json-export postman/reports/sprint-1-test-summary.json
+
+      # Upload the generated reports as a downloadable build artifact,
+      # retained for 30 days, so results are visible without re-running locally.
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-test-reports
+          path: postman/reports/
+          retention-days: 30
