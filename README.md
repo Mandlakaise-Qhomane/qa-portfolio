@@ -54,16 +54,7 @@ A full performance and functional testing round on a live demo booking site, cov
 
 ---
 
-## About This Portfolio
 
-Each subfolder represents a different testing discipline. Projects follow a consistent professional standard:
-- Clear test plans
-- Well-designed test cases
-- Evidence-based execution
-- Proper defect reporting
-- Formal test summary / closure
-
----
 # API Testing Portfolio — Restful Booker
 
 **QA Engineer:** Mandla Qhomane
