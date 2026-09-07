@@ -70,8 +70,6 @@ Each subfolder represents a different testing discipline. Projects follow a cons
 **Tools:** Postman · Newman · JavaScript (Postman assertions) · GitHub Actions
 **API Under Test:** [Restful Booker](https://restful-booker.herokuapp.com) — `https://restful-booker.herokuapp.com`
 
-![CI/CD](https://github.com/Mandlakaise-Qhomane/qa-api-portfolio/actions/workflows/postman-newman-ci.yml/badge.svg)
-
 ## Quick Stats
 
 | Metric | Value |
@@ -80,5 +78,7 @@ Each subfolder represents a different testing discipline. Projects follow a cons
 | Real defects discovered | 2 |
 | API endpoints covered | 5 |
 | Automated CI/CD | ✅ Newman runs on every push |
+---
+
 **Mandlakaise Qhomane**  
 QA / Manual & Automation Test Engineerto
