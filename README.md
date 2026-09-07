@@ -72,4 +72,4 @@ A full performance and functional testing round on a live demo booking site, cov
 ---
 
 **Mandlakaise Qhomane**  
-QA / Manual & Automation Test Engineerto
+QA / Manual & Automation Test Engineert
