@@ -64,6 +64,21 @@ Each subfolder represents a different testing discipline. Projects follow a cons
 - Formal test summary / closure
 
 ---
+# API Testing Portfolio — Restful Booker
 
+**QA Engineer:** Mandla Qhomane
+**Tools:** Postman · Newman · JavaScript (Postman assertions) · GitHub Actions
+**API Under Test:** [Restful Booker](https://restful-booker.herokuapp.com) — `https://restful-booker.herokuapp.com`
+
+![CI/CD](https://github.com/Mandlakaise-Qhomane/qa-api-portfolio/actions/workflows/postman-newman-ci.yml/badge.svg)
+
+## Quick Stats
+
+| Metric | Value |
+|---|---|
+| Test cases | 7 (5 positive, 2 negative) |
+| Real defects discovered | 2 |
+| API endpoints covered | 5 |
+| Automated CI/CD | ✅ Newman runs on every push |
 **Mandlakaise Qhomane**  
 QA / Manual & Automation Test Engineerto
