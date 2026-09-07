@@ -1,27 +1,69 @@
-# QA Portfolio — Mandla Qhomane
+# QA Portfolio — Mandlakaise Qhomane
 
-This repository is a collection of QA testing projects, organized by tool/skill. Each folder below is a separate, self-contained project with its own documentation.
+This repository is a collection of QA testing projects, organized by tool and skill area. Each folder is a self-contained project with its own documentation.
+
+---
 
 ## Folders
 
 | Folder | Focus |
-|---|---|
-| [`jmeter/`](./jmeter) | Performance & load testing — see `jmeter/blazedemo-performance-portfolio/` |
-| `manual-testing/` | Manual test case design & execution |
-| `postman/` | API testing |
-| `rest-assured/` | API test automation (Java) |
-| `playwright/` | Web UI test automation |
-| `selenium/` | Web UI test automation |
+|--------|-------|
+| [`jmeter/`](./jmeter) | Performance & load testing |
+| [`manual-testing/`](./manual-testing) | Manual test case design & execution |
+| [`postman/`](./postman) | API testing |
+| [`rest-assured/`](./rest-assured) | API test automation (Java) |
+| [`playwright/`](./playwright) | Web UI test automation |
+| [`selenium/`](./selenium) | Web UI test automation |
+
+---
+
+## Featured Project: OpenMRS Manual Testing Portfolio
+
+**Location:** [`manual-testing/OpenMRS-Manual-Testing-Portfolio/`](./manual-testing/OpenMRS-Manual-Testing-Portfolio)
+
+A complete **enterprise-grade Manual Testing Portfolio** for the OpenMRS 3 (O3) Health Management System (EMR).
+
+### What is included:
+- Software Requirements Specification (SRS)
+- Test Plan
+- Requirements Traceability Matrix (RTM)
+- 10 high-quality test cases (Positive, Negative, Security)
+- Test Data
+- Full Test Execution Report (100% Pass Rate)
+- Defect Log
+- Test Summary Report
+- Organized screenshots as evidence
+
+### STLC Coverage:
+Requirement Analysis → Test Planning → Test Design → Environment Setup → Test Execution → Defect Reporting → Test Closure
+
+**Application tested:** [OpenMRS 3 Demo](https://o3.openmrs.org/openmrs/spa/login)
+
+---
 
 ## Featured Project: JMeter Performance Testing
-`jmeter/blazedemo-performance-portfolio/` — a full performance and functional testing round on a live demo booking site, covering:
+
+**Location:** [`jmeter/blazedemo-performance-portfolio/`](./jmeter/blazedemo-performance-portfolio)
+
+A full performance and functional testing round on a live demo booking site, covering:
 - Test planning and strategy
 - 6 detailed test cases (functional, load, stress, soak, data-driven, negative-path)
 - 2 documented bugs with full reports
 - Test closure summary
 - Automated test execution via GitHub Actions
 
-See that folder's own `README.md` for full details.
+---
 
 ## About This Portfolio
-Each subfolder represents a different testing discipline. As more projects are completed, they'll be added here with their own documentation, following the same standard: clear test plans, test cases, bug reports, and closure summaries.
+
+Each subfolder represents a different testing discipline. Projects follow a consistent professional standard:
+- Clear test plans
+- Well-designed test cases
+- Evidence-based execution
+- Proper defect reporting
+- Formal test summary / closure
+
+---
+
+**Mandlakaise Qhomane**  
+QA / Manual & Automation Test Engineerto
