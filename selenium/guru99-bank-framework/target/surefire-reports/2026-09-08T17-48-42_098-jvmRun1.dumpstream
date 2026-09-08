@@ -1,0 +1,10 @@
+# Created at 2026-09-08T17:48:48.297
+unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=152.0.7977.82): User or Password is not valid
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-1052-azure', java.version: '25.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f65bb0ffaff2dd7b4ed17a58dbdee78, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.82, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34731}, goog:processID: 22328, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34731/devtoo..., se:cdpVersion: 152.0.7977.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f65bb0ffaff2dd7b4ed17a58dbdee78
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Guru99 Bank Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.bank.framework.utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Login Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.bank.tests.LoginTests">
+        <methods>
+          <include name="blankLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- com.bank.tests.LoginTests -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="Customer Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.bank.tests.CustomerTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="createCustomer"/>
+        </methods>
+      </class> <!-- com.bank.tests.CustomerTests -->
+    </classes>
+  </test> <!-- Customer Tests(failed) -->
+  <test thread-count="5" name="Account Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.bank.tests.AccountTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="openSavingsAccount"/>
+        </methods>
+      </class> <!-- com.bank.tests.AccountTests -->
+    </classes>
+  </test> <!-- Account Tests(failed) -->
+  <test thread-count="5" name="Transaction Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.bank.tests.TransactionTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="miniStatement"/>
+          <include name="fundTransfer"/>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="withdrawOverBalance"/>
+          <include name="withdrawValid"/>
+          <include name="depositAmount"/>
+        </methods>
+      </class> <!-- com.bank.tests.TransactionTests -->
+    </classes>
+  </test> <!-- Transaction Tests(failed) -->
+</suite> <!-- Failed suite [Guru99 Bank Suite] -->

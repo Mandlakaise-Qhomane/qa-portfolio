@@ -1,0 +1,15 @@
+com/bank/framework/pages/FundTransferPage.class
+com/bank/framework/pages/WithdrawalPage.class
+com/bank/framework/pages/NewAccountPage.class
+com/bank/framework/config/ConfigReader.class
+com/bank/framework/pages/MiniStatementPage.class
+com/bank/framework/pages/NewCustomerPage.class
+com/bank/framework/utils/ExtentManager.class
+com/bank/framework/utils/ScreenshotUtil.class
+com/bank/framework/pages/HomePage.class
+com/bank/framework/utils/ExtentManager$FileGuard.class
+com/bank/framework/base/DriverFactory.class
+com/bank/framework/utils/TestListener.class
+com/bank/framework/pages/DepositPage.class
+com/bank/framework/base/BaseTest.class
+com/bank/framework/pages/LoginPage.class

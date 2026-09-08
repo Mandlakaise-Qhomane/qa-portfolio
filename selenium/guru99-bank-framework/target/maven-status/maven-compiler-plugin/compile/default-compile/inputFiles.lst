@@ -1,0 +1,14 @@
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/base/BaseTest.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/base/DriverFactory.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/config/ConfigReader.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/DepositPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/FundTransferPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/HomePage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/LoginPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/MiniStatementPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/NewAccountPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/NewCustomerPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/pages/WithdrawalPage.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/utils/ExtentManager.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/utils/ScreenshotUtil.java
+/workspaces/qa-portfolio/selenium/guru99-bank-framework/src/main/java/com/bank/framework/utils/TestListener.java
