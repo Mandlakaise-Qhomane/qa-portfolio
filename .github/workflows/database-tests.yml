@@ -3,11 +3,11 @@ name: Database tests
 on:
   push:
     paths:
-      - "database/**"
+      - "databases/**"
       - ".github/workflows/database-tests.yml"
   pull_request:
     paths:
-      - "database/**"
+      - "databases/**"
       - ".github/workflows/database-tests.yml"
   workflow_dispatch:
 
@@ -36,4 +36,4 @@ jobs:
           MYSQL_HOST: 127.0.0.1
           MYSQL_USER: root
           MYSQL_PWD: root
-        run: bash database/run_suite.sh
+        run: bash databases/run_suite.sh
