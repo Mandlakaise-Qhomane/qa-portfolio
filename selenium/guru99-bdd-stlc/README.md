@@ -5,8 +5,6 @@
 **Tracking:** Jira story keys `GURU-101` … `GURU-207` (see [jira/backlog.md](jira/backlog.md))  
 **Cases:** 10 Gherkin scenarios
 
-This folder is Phase 2 of the Guru99 work: same bank demo as `guru99-bank-framework`, rewritten as BDD.
-
 ---
 
 ## Recruiter path
