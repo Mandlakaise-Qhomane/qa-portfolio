@@ -150,7 +150,7 @@ CREATE TABLE audit_log (
   action         VARCHAR(30)      NOT NULL,
   old_values     JSON             NULL,
   new_values     JSON             NULL,
-  changed_by     VARCHAR(60)      NOT NULL DEFAULT CURRENT_USER(),
+  changed_by     VARCHAR(60)      NOT NULL DEFAULT (CURRENT_USER()),
   changed_at     DATETIME         NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (audit_id),
   KEY idx_audit_entity (entity_name, entity_id),
