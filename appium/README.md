@@ -1,31 +1,18 @@
-# Appium
+# Appium — Meridian Field
 
-Mobile field-service suite for a Meridian Field agent app. Cases cover launch, login, job list, start/complete, notes, search, priority, offline, depot change, and session timeout.
+Mobile field-service suite. Cases cover launch, login, job list, start/complete, notes, search, priority, offline, depot change, and session timeout.
 
-Open [`meridian-field-appium`](./meridian-field-appium) and run `mvn test`.
+Unzip, then:
 
-**Stack:** Java 17 · Maven · Appium Java Client 9 · Selenium 4 · Cucumber 7 · TestNG · Jira keys · STLC docs
+```bash
+cd meridian-field-appium
+mvn test
+```
 
-Default run uses Chrome in Pixel 7 emulation plus a bundled app on `http://127.0.0.1:18081/`. No emulator is required for that profile. Optional: set `platform=android` and start Appium on port 4723.
+**Stack:** Java 17 · Maven · Appium Java Client 9 · Selenium 4 · Cucumber 7
 
-**Bugs:** logged in [`meridian-field-appium/docs/08-defect-reports.md`](./meridian-field-appium/docs/08-defect-reports.md). Jira keys sit in [`meridian-field-appium/jira/backlog.md`](./meridian-field-appium/jira/backlog.md). The default profile has no planted product defects.
+**Default profile:** Chrome mobile emulation + bundled app on port 18081. No Appium server required.
 
-## Test cases
+Optional Android: start an emulator, start Appium on 4723, set `platform=android` in `meridian-field-appium/src/main/resources/config.properties`.
 
-| ID | Jira | What we tested | Type |
-|---|---|---|---|
-| TC-01 | APP-101 | App launch shows the sign-in screen | Smoke |
-| TC-02 | APP-102 | Valid agent login opens home | Smoke |
-| TC-03 | APP-103 | Invalid password is rejected | Negative |
-| TC-04 | APP-104 | Blank agent id is rejected | Negative |
-| TC-05 | APP-105 | Logout returns to sign-in | Functional |
-| TC-06 | APP-201 | Job list shows three open jobs | Smoke |
-| TC-07 | APP-202 | Job 1001 opens as ASSIGNED | Functional |
-| TC-08 | APP-203 | Start job moves status to IN_PROGRESS | Functional |
-| TC-09 | APP-204 | Complete job moves status to COMPLETED | Functional |
-| TC-10 | APP-205 | Site note is saved on the job | Functional |
-| TC-11 | APP-206 | Search by text finds job 1001 | Functional |
-| TC-12 | APP-301 | Priority queue lists only HIGH jobs | Functional |
-| TC-13 | APP-302 | Offline banner is shown | Functional |
-| TC-14 | APP-303 | Depot can be changed in settings | Functional |
-| TC-15 | APP-304 | Idle timeout ends the session | Negative |
+Full install notes: [`meridian-field-appium/INSTALL.md`](meridian-field-appium/INSTALL.md).
