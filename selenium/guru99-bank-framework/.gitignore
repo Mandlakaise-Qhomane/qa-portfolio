@@ -1,7 +1,0 @@
-target/
-test-output/
-reports/
-screenshots/
-*.class
-.idea/
-*.iml
