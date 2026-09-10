@@ -32,7 +32,7 @@ JMeter performance work on [BlazeDemo](https://blazedemo.com): load, soak, data-
 
 ## [selenium](./selenium)
 
-Java 17, Maven, Selenium 4, Cucumber, and TestNG. Ten BDD scenarios for a Guru99-style bank, run against a local fixture so `mvn test` stays green. Open [`guru99-bdd-stlc`](./selenium/guru99-bdd-stlc).
+Java 17, Maven, Selenium 4, Cucumber, and TestNG. Ten BDD scenarios for a Guru99-style bank, run against a local fixture so `mvn test`. Open [`guru99-bdd-stlc`](./selenium/guru99-bdd-stlc).
 
 ---
 
