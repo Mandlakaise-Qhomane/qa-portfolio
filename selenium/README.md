@@ -6,7 +6,7 @@ Open [`guru99-bdd-stlc`](./guru99-bdd-stlc) and run `mvn test`.
 
 **Stack:** Java 17 · Maven · Selenium 4 · Cucumber 7 · TestNG · Jira keys · STLC docs
 
-The suite starts a local bank on `http://127.0.0.1:18080/` so a recruiter does not need a live Guru99 manager ID. Last local run: **10 passed / 54 steps**.
+The suite starts a local bank on `http://127.0.0.1:18080/`Last local run: **10 passed / 54 steps**.
 
 ## Test cases
 
