@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Meridian-Field-Appium-STLC" verbose="1">
-    <test name="Cycle-1">
-        <classes>
-            <class name="za.qhomane.appium.runner.CucumberTestRunner"/>
-        </classes>
-    </test>
-</suite>
