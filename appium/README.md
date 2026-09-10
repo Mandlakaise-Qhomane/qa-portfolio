@@ -8,6 +8,8 @@ Open [`meridian-field-appium`](./meridian-field-appium) and run `mvn test`.
 
 Default run uses Chrome in Pixel 7 emulation plus a bundled app on `http://127.0.0.1:18081/`. No emulator is required for that profile. Optional: set `platform=android` and start Appium on port 4723.
 
+**Bugs:** logged in [`meridian-field-appium/docs/08-defect-reports.md`](./meridian-field-appium/docs/08-defect-reports.md). Jira keys sit in [`meridian-field-appium/jira/backlog.md`](./meridian-field-appium/jira/backlog.md). The default profile has no planted product defects.
+
 ## Test cases
 
 | ID | Jira | What we tested | Type |
