@@ -1,75 +1,51 @@
 # QA Portfolio — Mandlakaise Qhomane
 
-This repository is a collection of QA testing projects, organized by tool and skill area. Each folder is a self-contained project with its own documentation.
+Junior / entry QA work: manual, API, performance, database, and UI automation. Click a folder to open the project.
+
+**Email:** mandlaqhomane07@gmail.com
 
 ---
 
-## Folders
+## [manual-testing](./manual-testing)
 
-| Folder | Focus |
-|--------|-------|
-| [`jmeter/`](./jmeter) | Performance & load testing |
-| [`manual-testing/`](./manual-testing) | Manual test case design & execution |
-| [`postman/`](./postman) | API testing |
-| [`rest-assured/`](./rest-assured) | API test automation (Java) |
-| [`playwright/`](./playwright) | Web UI test automation |
-| [`selenium/`](./selenium) | Web UI test automation |
+Full STLC on the [OpenMRS 3](https://o3.openmrs.org/openmrs/spa/login) EMR demo: SRS, plan, RTM, 10 cases (login, patient, appointments, clinical, security), screenshots, and closure. Cycle 1 pass rate was 100%. Open [`OpenMRS-Manual-Testing-Portfolio`](./manual-testing/OpenMRS-Manual-Testing-Portfolio) for the pack.
 
 ---
 
-## Featured Project: OpenMRS Manual Testing Portfolio
+## [postman](./postman)
 
-**Location:** [`manual-testing/OpenMRS-Manual-Testing-Portfolio/`](./manual-testing/OpenMRS-Manual-Testing-Portfolio)
-
-A complete **enterprise-grade Manual Testing Portfolio** for the OpenMRS 3 (O3) Health Management System (EMR).
-
-### What is included:
-- Software Requirements Specification (SRS)
-- Test Plan
-- Requirements Traceability Matrix (RTM)
-- 10 high-quality test cases (Positive, Negative, Security)
-- Test Data
-- Full Test Execution Report (100% Pass Rate)
-- Defect Log
-- Test Summary Report
-- Organized screenshots as evidence
-
-### STLC Coverage:
-Requirement Analysis → Test Planning → Test Design → Environment Setup → Test Execution → Defect Reporting → Test Closure
-
-**Application tested:** [OpenMRS 3 Demo](https://o3.openmrs.org/openmrs/spa/login)
+REST tests on [Restful Booker](https://restful-booker.herokuapp.com) with Postman, Newman, and GitHub Actions. Seven cases cover auth, create, read, update, and list; two negative cases found live defects (bad dates accepted, price truncated). Collection, environments, bug reports, and CI live in this folder.
 
 ---
 
-## Featured Project: JMeter Performance Testing
+## [databases](./databases)
 
-**Location:** [`jmeter/blazedemo-performance-portfolio/`](./jmeter/blazedemo-performance-portfolio)
-
-A full performance and functional testing round on a live demo booking site, covering:
-- Test planning and strategy
-- 6 detailed test cases (functional, load, stress, soak, data-driven, negative-path)
-- 2 documented bugs with full reports
-- Test closure summary
-- Automated test execution via GitHub Actions
+MySQL 8 order-management suite: schema, procedures, 10 SQL cases, STLC docs, and CI. Cycle 1 on GitHub Actions is 8 PASS / 2 FAIL by design (stock not released on cancel; overpayment allowed). Start at this folder’s README, then `docs/` and `sql/tests/`.
 
 ---
 
+## [jmeter](./jmeter)
 
-# API Testing Portfolio — Restful Booker
+JMeter performance work on [BlazeDemo](https://blazedemo.com): critical path, load, soak, data-driven, and negative tests. Booking stays under 3s; the site strains near 160 concurrent users; two bugs are logged. Open [`blazedemo-performance-portfolio`](./jmeter/blazedemo-performance-portfolio).
 
-**QA Engineer:** Mandla Qhomane
-**Tools:** Postman · Newman · JavaScript (Postman assertions) · GitHub Actions
-**API Under Test:** [Restful Booker](https://restful-booker.herokuapp.com) — `https://restful-booker.herokuapp.com`
-
-## Quick Stats
-
-| Metric | Value |
-|---|---|
-| Test cases | 7 (5 positive, 2 negative) |
-| Real defects discovered | 2 |
-| API endpoints covered | 5 |
-| Automated CI/CD | ✅ Newman runs on every push |
 ---
 
-**Mandlakaise Qhomane**  
-QA / Manual & Automation Test Engineert
+## [selenium](./selenium)
+
+Java 17 + Selenium 4 + TestNG + Maven Page Object framework for [Guru99 Bank V4](https://www.demo.guru99.com/V4/). Source and suite live in [`guru99-bank-framework`](./selenium/guru99-bank-framework). Run with `mvn test`.
+
+---
+
+## [playwright](./playwright)
+
+Placeholder for Playwright UI automation. No executed suite yet.
+
+---
+
+## [rest-assured](./rest-assured)
+
+Placeholder for Rest Assured (Java) API automation. No executed suite yet.
+
+---
+
+Mandlakaise Qhomane · QA / Manual & API Test Engineer
