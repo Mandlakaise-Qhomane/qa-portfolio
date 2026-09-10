@@ -1,5 +1,29 @@
 # Appium
 
-Open [`meridian-field-appium`](./meridian-field-appium).
+Mobile field-service suite for a Meridian Field agent app. Cases cover launch, login, job list, start/complete, notes, search, priority, offline, depot change, and session timeout.
 
-Fifteen mobile BDD cases, STLC docs, Jira keys. Run `mvn test` inside that folder.
+Open [`meridian-field-appium`](./meridian-field-appium) and run `mvn test`.
+
+**Stack:** Java 17 · Maven · Appium Java Client 9 · Selenium 4 · Cucumber 7 · TestNG · Jira keys · STLC docs
+
+Default run uses Chrome in Pixel 7 emulation plus a bundled app on `http://127.0.0.1:18081/`. No emulator is required for that profile. Optional: set `platform=android` and start Appium on port 4723.
+
+## Test cases
+
+| ID | Jira | What we tested | Type |
+|---|---|---|---|
+| TC-01 | APP-101 | App launch shows the sign-in screen | Smoke |
+| TC-02 | APP-102 | Valid agent login opens home | Smoke |
+| TC-03 | APP-103 | Invalid password is rejected | Negative |
+| TC-04 | APP-104 | Blank agent id is rejected | Negative |
+| TC-05 | APP-105 | Logout returns to sign-in | Functional |
+| TC-06 | APP-201 | Job list shows three open jobs | Smoke |
+| TC-07 | APP-202 | Job 1001 opens as ASSIGNED | Functional |
+| TC-08 | APP-203 | Start job moves status to IN_PROGRESS | Functional |
+| TC-09 | APP-204 | Complete job moves status to COMPLETED | Functional |
+| TC-10 | APP-205 | Site note is saved on the job | Functional |
+| TC-11 | APP-206 | Search by text finds job 1001 | Functional |
+| TC-12 | APP-301 | Priority queue lists only HIGH jobs | Functional |
+| TC-13 | APP-302 | Offline banner is shown | Functional |
+| TC-14 | APP-303 | Depot can be changed in settings | Functional |
+| TC-15 | APP-304 | Idle timeout ends the session | Negative |
