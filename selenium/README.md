@@ -6,7 +6,9 @@ Open [`guru99-bdd-stlc`](./guru99-bdd-stlc) and run `mvn test`.
 
 **Stack:** Java 17 · Maven · Selenium 4 · Cucumber 7 · TestNG · Jira keys · STLC docs
 
-The suite starts a local bank on `http://127.0.0.1:18080/`Last local run: **10 passed / 54 steps**.
+The suite starts a local bank on `http://127.0.0.1:18080/` Last local run: **10 passed / 54 steps**.
+
+**Bugs:** logged in [`guru99-bdd-stlc/docs/08-defect-reports.md`](./guru99-bdd-stlc/docs/08-defect-reports.md). Jira keys sit in [`guru99-bdd-stlc/jira/backlog.md`](./guru99-bdd-stlc/jira/backlog.md). This local bank has no planted product defects; a red case is a test or environment issue.
 
 ## Test cases
 
