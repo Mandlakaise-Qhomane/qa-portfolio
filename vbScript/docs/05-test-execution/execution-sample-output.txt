@@ -1,0 +1,38 @@
+PASS  TC-01  InvoiceEngine.vbs loaded
+PASS  TC-02  valid INV0001234
+PASS  TC-03  lowercase prefix accepted
+PASS  TC-04  too short rejected
+PASS  TC-05  wrong prefix rejected
+PASS  TC-06  non-numeric tail rejected
+PASS  TC-07  valid email
+PASS  TC-08  missing @ rejected
+PASS  TC-09  missing dot after @ rejected
+PASS  TC-10  space rejected
+PASS  TC-11  expected=250
+PASS  TC-12  expected=0.02
+PASS  TC-13  expected=1002
+PASS  TC-14  expected=1003
+PASS  TC-15  expected=1004
+PASS  TC-16  expected=90
+PASS  TC-17  expected=100
+PASS  TC-18  expected=50
+PASS  TC-19  expected=1011
+PASS  TC-20  expected=1011
+PASS  TC-21  expected=15
+PASS  TC-22  expected=0
+PASS  TC-23  expected=1.5
+PASS  TC-24  expected=1021
+PASS  TC-25  expected=115
+PASS  TC-26  expected=57.5
+PASS  TC-27  invoice number echoed
+PASS  TC-28  email normalised
+PASS  TC-29  net 2 x 50
+PASS  TC-30  10 percent off
+PASS  TC-31  VAT on discounted net
+PASS  TC-32  gross = disc + vat
+PASS  TC-33  expected=1030
+PASS  TC-34  expected=1031
+
+==============================
+Total: 34  Passed: 34  Failed: 0
+SUITE RESULT: PASS
