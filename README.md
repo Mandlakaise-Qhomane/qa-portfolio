@@ -1,6 +1,6 @@
 # QA Portfolio — Mandlakaise Qhomane
 
-Junior / entry QA work: manual, API, performance, database, and UI automation. Click a folder to open the project.
+Junior / entry QA work: manual, API, performance, database, UI, mobile, and VBScript automation. Click a folder to open the project.
 
 **Email:** mandlaqhomane07@gmail.com
 
@@ -36,16 +36,15 @@ Java 17, Maven, Selenium 4, Cucumber, and TestNG. Ten BDD scenarios for a Guru99
 
 ---
 
-## [playwright](./playwright)
+## [appium](./appium)
 
-Placeholder for Playwright UI automation. No executed suite yet.
-
----
-
-## [rest-assured](./rest-assured)
-
-Placeholder for Rest Assured (Java) API automation. No executed suite yet.
+Mobile field-service suite for a Meridian Field agent app. Java 17, Appium, Cucumber, TestNG. Fifteen BDD cases. Open [`meridian-field-appium`](./appium/meridian-field-appium) and run `mvn test`.
 
 ---
 
-Mandlakaise Qhomane · QA / Manual & API Test Engineer
+## [vbScript](./vbScript)
+
+STLC on **NalediPay**, a VBScript invoice engine (ZAR, 15% VAT). Custom WSH runner: 34 assertions, 9 requirements, 4 defect tickets (3 product bugs fixed, 1 environment constraint). Run on Windows:
+
+```bat
+cscript //nologo tests\TestRunner.vbs
