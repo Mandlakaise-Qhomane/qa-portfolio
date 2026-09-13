@@ -4,6 +4,22 @@ Junior / entry QA work: manual, API, performance, database, UI, mobile, and VBSc
 
 **Email:** mandlaqhomane07@gmail.com
 
+## ⚠️ Testing Environment Note
+
+Some automation suites in this portfolio (e.g. Selenium-based tests) were executed 
+via RDP into an AWS EC2 instance, accessed from a mobile device, rather than a 
+local desktop/laptop environment. This setup was a deliberate way to demonstrate 
+cloud-based test execution and remote environment familiarity, but it does 
+introduce memory/resource constraints on the EC2 instance that occasionally 
+prevent higher-memory test runs (e.g. large parallel Selenium suites) from 
+completing successfully.
+
+**Why this is here:** I want to be transparent about the environment behind 
+these results — this is a constraint of the infrastructure I used to build 
+this portfolio, not a gap in my understanding of the tools or test design. 
+Test logic, structure, and coverage reflect my actual working knowledge of 
+Selenium and automation frameworks.
+
 ---
 
 ## [manual-testing](./manual-testing)
